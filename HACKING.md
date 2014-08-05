@@ -1,5 +1,5 @@
-CDN Style Commandments
-==========================
+Style Commandments
+==================
 
 - Step 1: Read http://www.python.org/dev/peps/pep-0008/
 - Step 2: Read http://www.python.org/dev/peps/pep-0008/ again
@@ -86,7 +86,7 @@ Template::
   \n
   {{third-party lib imports in human alphabetical order}}
   \n
-  {{cdn imports in human alphabetical order}}
+  {{bootstrappy imports in human alphabetical order}}
   \n
   \n
   {{begin your code}}
@@ -102,21 +102,9 @@ Example::
 
   import eventlet
 
-  import cdn.common
-  from cdn import test
-  import cdn.storage.cassandra
+  import bootstrappy.common
+  from bootstrap import test
 
-
-More Import Examples
---------------------
-
-**INCORRECT** ::
-
-  import cdn.transport.wsgi as wsgi
-
-**CORRECT** ::
-
-  from cdn.transport import wsgi
 
 Docstrings
 ----------
@@ -253,20 +241,6 @@ submitted bug fix does have a unit test, be sure to add a new one that fails
 without the patch and passes with the patch.
 
 NOTE: 100% coverage is required
-
-openstack-common
-----------------
-
-A number of modules from openstack-common are imported into the project.
-
-These modules are "incubating" in openstack-common and are kept in sync
-with the help of openstack-common's update.py script. See:
-
-  http://wiki.openstack.org/CommonLibrary#Incubation
-
-The copy of the code should never be directly modified here. Please
-always update openstack-common first and then run the script to copy
-the changes across.
 
 
 Logging
