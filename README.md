@@ -1,4 +1,1 @@
-bootstrappy
-===========
-
-Bootstrap a Python package
+A sample Python package
