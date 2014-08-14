@@ -1,4 +1,4 @@
-from mypackage import mymodule
+from bootstrappy import mymodule
 
 def test_hello():
     mymodule.hello(None)

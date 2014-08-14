@@ -5,3 +5,9 @@ class Cat(object):
 	
 	def get_name(self):
 		return self.name
+
+def hello(name):
+    print(name)
+
+def one():
+    return 1
