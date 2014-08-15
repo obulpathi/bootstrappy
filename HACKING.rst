@@ -1,10 +1,11 @@
-Style Commandments
-==================
+Hacking Guide
+=============
 
+Style Commandments
+------------------
 - Step 1: Read http://www.python.org/dev/peps/pep-0008/
 - Step 2: Read http://www.python.org/dev/peps/pep-0008/ again
 - Step 3: Read on
-
 
 General
 -------
@@ -140,7 +141,7 @@ Example::
   :param bar: (Default True) the bar parameter
   :param foo_long_bar: the foo parameter description is very
     long so we have to split it in multiple lines in order to
-    keey things ordered
+    keep things ordered
   :returns: return_type -- description of the return value
   :returns: description of the return value
   :raises: AttributeError, KeyError
@@ -246,6 +247,13 @@ NOTE: 100% coverage is required
 Logging
 -------
 Use __name__ as the name of your logger and name your module-level logger
-objects 'LOG'::
+objects 'log'::
 
-    LOG = logging.getLogger(__name__)
+    log = logging.getLogger(__name__)
+
+References
+----------
+- Zen of Python: http://www.python.org/dev/peps/pep-0020/
+- Style Commandments: http://www.python.org/dev/peps/pep-0008/
+- Comments: http://legacy.python.org/dev/peps/pep-0257/
+- reStructuredText Docstring Format: http://legacy.python.org/dev/peps/pep-0287/
