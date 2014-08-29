@@ -7,8 +7,12 @@ class Cat(object):
         return self.name
 
 
-def hello(name):
-    print(name)
+def hello():
+    print('hello, there!')
+
+
+def bootstrappy():
+    print('Bootstrappy is awesome')
 
 
 def one():

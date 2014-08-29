@@ -9,5 +9,7 @@ install_reqs = parse_requirements("requirements.txt")
 reqs = [str(ir.req) for ir in install_reqs]
 
 setuptools.setup(
-    install_requires=reqs
+    install_requires=reqs,
+    entry_points = {
+        'console_scripts': ['bootstrappy=bootstrappy.mymodule:bootstrappy', 'hello=bootstrappy.mymodule:hello'],}
 )
